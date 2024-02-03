@@ -2,13 +2,12 @@ from pinecone import Pinecone
 from pinecone import ServerlessSpec
 from langchain.embeddings.openai import OpenAIEmbeddings
 from tqdm import tqdm
-from load_dotenv import load_dotenv
+import streamlit as st
 
 import time
 
-load_dotenv()
 
-pc = Pinecone()   
+pc = Pinecone(api_key=st.secrets["pinecone_api_key"]) 
 embed_model = OpenAIEmbeddings(model="text-embedding-3-large")
 spec = ServerlessSpec(
     cloud="aws", region="us-west-2"

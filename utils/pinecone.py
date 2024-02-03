@@ -8,7 +8,7 @@ import time
 
 
 pc = Pinecone(api_key=st.secrets["pinecone_api_key"]) 
-embed_model = OpenAIEmbeddings(model="text-embedding-3-large")
+embed_model = OpenAIEmbeddings(model="text-embedding-3-large", api_key=st.secrets["openai_api_key"])
 spec = ServerlessSpec(
     cloud="aws", region="us-west-2"
 )

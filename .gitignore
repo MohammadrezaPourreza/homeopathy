@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+resources/MateriaMedica-John Henry Clarke/
+
 # Distribution / packaging
 .Python
 build/

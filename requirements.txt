@@ -1,0 +1,6 @@
+pypdf==4.0.1
+langchain==0.0.354
+langchain-community==0.0.16
+pinecone-client==3.0.0
+openai==1.6.1
+streamlit==1.31.0
